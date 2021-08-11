@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="qrcode,qrcodescanner,QRCodeScanner,QRCODESCANNER,online free qrcodescanner,online free qrscanner">
+    <meta name="description" content="this website is used to scan QRcodes">
+    <meta name="theme-color" content="#000000"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>QRCode Scanner</title>
+    <link rel="shortcut icon" href="img/logo192.png" type="image/png">
+    <script src="qrcode.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/logo192.png">
+</head>
+<body>
+    <div class="container">
+        <h1>QRCODE SCANNER</h1>
+     <div id="scanner"></div> 
+          <div id="result">
+    <h4>SCAN RESULT</h4>
+     <div id="output"></div>
+          </div>
+    </div>
+<script type="text/javascript">
+function onScanSuccess(qrCodeMessage) {
+    document.getElementById('output').innerHTML = `<p class="result">`+qrCodeMessage+`</p>`
+}
+
+function onScanError(error){
+    alert(error);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+    "scanner", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess, onScanError);
+</script>
+<script src="app.js"></script>
+
+    
+</body>
+</html>
