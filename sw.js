@@ -1,4 +1,4 @@
-var cacheName = 'QRCode scanner v1'; 
+var cacheName = 'QRCode Scanner v1'; 
 
 var cacheAssets = [ 
   '/',
