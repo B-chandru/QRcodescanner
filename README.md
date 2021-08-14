@@ -8,5 +8,5 @@
   </ul>
   
 ## live site. 
-<a href="https://b-chandru.github.io/qrcodescanner" target="_blank" rel="noopener noreferrer"> </a>
-/
+<a href="https://b-chandru.github.io/QRcodescanner/" target="_blank" rel="noopener noreferrer">  https://b-chandru.github.io/QRcodescanner/</a>
+
